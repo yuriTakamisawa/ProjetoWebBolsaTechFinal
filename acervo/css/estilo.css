@@ -1,0 +1,937 @@
+* {
+    font-family: 'Source Sans 3', sans-serif;;
+}
+
+/*----------INICIO DO SITE E SEUS CSS----------*/
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFF;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.draco {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display:flex;
+    align-items:center;
+    
+}
+
+.logo img {
+    margin-top: 25px ;
+    height: 130px;
+    width: auto;
+
+
+}
+.menu {
+    display:flex;
+    align-items:center;
+}
+
+
+
+
+
+/*----------NAV NAVEGAÇÃO DE MENUS----------*/
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Source Sans 3';
+    font-weight:bold;
+    color: #000000;
+   
+}
+nav .active a,
+nav a:hover {
+    background-color: #000000;
+    color: #f3e128;
+}
+
+
+
+
+/*----------BANNER DO SITE----------*/
+#banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/bannerPintura.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 550px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+  
+.coluna {
+    flex-direction: column;
+}
+.banner_cabe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_cabe h1 {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 50px;
+    
+    text-shadow: 1px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner_cabe h2 {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow: 1px 1px 0px #555555;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 20px;
+}
+.banner_opicao {
+    height: 210px;
+    display: flex;
+}
+.banner-1,
+.banner-2,
+.banner-3 {
+    flex: 1;
+    color: #000000;
+    padding: 20px;
+}
+.banner-1 {
+    background-color: #eb4b02;
+}
+.banner-2 {
+    background-color: #f3e128;
+}
+.banner-3 {
+    background-color: #004d9f;
+}
+.banner_titulo {
+    font-size: 20px;
+    font-weight: 700;
+}
+.banner_cont {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_opicao a {
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 5px;
+    font-weight: 700;
+    color:#000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.banner_opicao a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+
+
+
+
+
+/*----------IMAGENS DO SITE----------*/
+img {
+   width: auto;
+   height: 30px;
+}
+.plano-1 {
+    width: 40px;
+    height: auto;
+}
+.plano-2 {
+    width: 15px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/*----------HORA EM TEMPO REAL DO SITE----------*/
+.draco_hora {
+        flex: auto;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        color: #000000;
+        background-color: #0d904f;
+        border-bottom: 1px solid #ffffff;
+        padding: 5px;
+}
+.draco_centra {
+        margin: 5px;
+        padding: 5px;
+}
+
+
+
+
+
+
+/*----------REDE SOCIAL----------*/
+.draco_redes {
+   
+    margin-right: 250px;
+    text-align: end;
+    
+}
+
+.draco_redes img {
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: 15px;
+}
+
+
+
+
+
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+
+
+
+
+
+.artigo-titu {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.artigo-titu-texto {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+}
+.artigo-titu-barra {
+    width: 50px;
+    height: 1px;
+    background-color: #000000;
+    margin-top: 10px;
+}
+.artigo-corpo {
+    color: #000000;
+}
+.artigo-corpo article:hover {
+    background-color: #f5f5f5;
+}
+
+.quadro {
+    width: 140px;
+    height: 140px;
+    
+    margin: 12px;
+
+    float: left;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.quadro img {
+    width: inherit;
+    height: inherit;
+}
+
+.quadroInfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.quadroInfo h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+} 
+
+
+
+.quadro:hover .quadroInfo {
+    display: flex;
+    cursor: pointer;
+}
+
+
+.faleConosco ul {
+    padding-left: 12px;
+}
+
+.faleConosco input[type=text],
+.faleConosco input[type=email],
+.faleConosco textarea {
+    max-width: 290px;
+    width: 100%;
+    height: 40px;
+    border-radius: 0px;
+    padding: 10px 16px 6px;
+    background: #fff;
+    border: 1px solid #cbced1;
+    margin-bottom: 10px;
+    
+    font-size: 15px;
+    
+    text-align: left;
+    color: #060e17;
+    opacity: 1;
+    
+}
+
+.faleConosco textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+.sectionFaleConoscoFormItem button {
+    display: inline-block;
+    border: none;
+    padding: 5px;
+    font-weight: 700;
+    color:#000000;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sectionFaleConoscoFormItem button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+article a {
+    text-decoration: none;
+}
+article .data {
+    display: flex;
+}
+article .post {
+    display: flex;
+    background-color: #888888;
+    color: #ffffff;
+    padding: 10px;
+    margin-right: 4px;
+}
+article .post-comentarios {
+    display: flex;
+    background-color:#9d1708;
+    color: #ffffff;
+    padding: 10px;
+}
+article .img-info {
+    margin-top: 30px;
+}
+
+article .img-info.noticia4 img{
+    height: 414px;
+}
+article .img-info img {
+    width: 100%;
+    height: auto;
+}
+article .data-titulo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+article .data-resumo {
+    color: #000000;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.barra {
+    width: 300px;
+    height: 1px;
+    background-color: #000b12;
+    padding: 3px;
+}
+
+
+
+
+
+footer {
+    background-color: #0d904f;
+    display: flex;
+    justify-content: center;
+}
+.footer-menu {
+    display: flex;
+}
+.fo-1, .fo-2, .fo-3 {
+    flex: 1;
+    color: #000000;
+    padding: 20px;
+}
+.fo-1 {
+    background-color: #004d9f;
+}
+.fo-2 {
+    background-color: #f3e128;
+}
+.fo-3 {
+    background-color: #eb4b02;
+}
+.footer-area {
+    display: flex;
+}
+.area-item {
+    flex: 1;
+    color: #ffffff;
+}
+.flexcoluna {
+    flex-direction:column;
+}
+.coopy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #555555;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.linksFooter a{
+    display:flex;
+    width: fit-content;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+
+.linksFooter a:hover {
+    color: #ffffff;
+}
+
+
+.newsLetterForm p {
+    color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+
+.newsletterFormItem input[type=email] {
+    max-width: 290px;
+    width: 100%;
+    height: 40px;
+    border-radius: 0px;
+    padding: 10px 16px 6px;
+    background: #fff;
+    border: 1px solid #cbced1;
+    margin-bottom: 10px;
+    
+    font-size: 15px;
+    text-align: left;
+    color: #060e17;
+    opacity: 1;
+    
+}
+
+.newsletterFormItem button {
+    display: inline-block;
+    border: none;
+    padding: 5px;
+    font-weight: 700;
+    color:#000000;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.newsletterFormItem button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.draco_redesFooter img{
+    height: 18px;
+        
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.draco_redesFooter img:nth-child(1) {
+    padding-left: 0;
+}
+
+.coopy {
+    color: #000000;
+    text-align: center;
+}
+
+/* Responsividade  Tablet*/
+@media(min-width:450px) and (max-width:800px) {
+
+    .draco_hora {
+        display: none;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .draco {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .logo img{
+        margin-top: 10px ;
+        height: 130px;
+    }
+
+    .menu {
+        transform: translateY(-15px);
+    }
+
+    nav a {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .banner_cabe {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner_cabe h2 {
+        transform: translateY(40px);
+    }
+
+    #banner {
+        background-position: top;
+        
+    }
+
+    .banner_opicao {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner-1 a {
+        margin-top: 19px;
+    }
+
+    .banner-2 .banner_cont{
+        margin-top: 0;
+        margin-bottom: 19px;
+    }
+
+    .banner-2 .banner_titulo {
+        line-height: 25px;
+    }
+
+    .banner-1,
+    .banner-2,
+    .banner-3 {
+        padding-top: 10px;
+    }
+
+
+    section .artigo {
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+
+    .artigo-titu-texto
+     {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .artigo-titu .artigo-titu-barra {
+        margin: auto;
+    }
+
+    article .img-info.noticia4 img{
+        height: 460px;
+    }
+
+    aside .artigo{
+
+        margin: 35px;
+    }
+
+    .quadro {
+        height: 200px;
+        width: 200px;
+        margin: 15px;
+    }
+
+    .faleConosco form {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fo-1,
+    .fo-2,
+    .fo-3 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-area {
+        width: 600px;
+    }
+    .linksFooter a{
+        margin: auto;
+    }
+    .newsLetterForm p {
+        padding-top: 10px;
+    }
+
+    
+    .newsletterFormItem input[type=email] {
+        font-size: 13px;
+        padding: 8px 14px 4px;
+    }
+    
+    .newsletterFormItem button {
+        font-size: 16px;
+    }
+
+    .draco_redesFooter ul {
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .draco_redesFooter img {
+        height: 16px;
+        padding-right: 10px;
+    
+    }
+
+    .draco_redesFooter img:nth-child(1) {
+        padding-left: 0px;
+    }
+    
+    /* Responsividade  Tablet Fim*/
+
+
+
+}
+
+/* Responsividade  Mobile*/
+
+@media(max-width:600px) {
+    .draco_hora {
+        display: none;
+    }
+
+    
+    .menu nav{
+        display: block;
+    }
+
+    nav .active a,
+    nav a:hover {
+    background-color: #f5f5f5;
+    color: #000000;
+    
+    }
+
+    
+    .menu ul {
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        top: 120px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        background-color: #ffffff;
+        height: calc(100vh- 120px);
+        z-index: 1;
+        transition: 0.5s;
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline:1rem ;
+        border-bottom: 1px solid rgb(0,0,0, 0.16);
+    }
+
+    .menuMobile {
+        border-top: 2px solid;
+        width: 25px;
+        
+        margin-right: 20px;
+    }
+    .menuMobile::after,
+    .menuMobile::before {
+        content: " ";
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 6px;
+        position: relative;
+        transition: 0.3s;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+    }
+
+    #banner {
+        background-position: top;
+        background-image: url(../img/bannerMobile.jpg);
+    }
+
+    .banner_cabe {
+        text-align: center;
+        align-items: center;
+    }
+
+    .banner_cabe h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .banner_cabe h2 {
+        font-size: 22px;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+
+    .banner_opicao {
+        
+        flex-direction: column;
+    }
+
+    section .artigo.noticias{
+        margin-top: 400px;
+        flex-direction: column;
+        
+    }
+
+    .artigo-titu .artigo-titu-barra 
+    {
+        margin: auto;
+    }
+
+    .artigo-titu-texto {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    
+    
+    .draco.content {
+        flex-wrap: wrap;
+    }
+    
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+
+    .quadro {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .quadro img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .quadroInfo {
+        width: calc(100% - 40px); 
+        height: calc(100% - 20px);
+        
+    }
+    
+
+    
+    
+    .faleConosco form {
+        justify-content: center;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .artigo-titu-texto  {
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .faleConosco input[type=text],
+    .faleConosco input[type=email],
+    .faleConosco textarea {
+    max-width: 240px;
+        
+    
+    }
+
+    
+
+    .faleConosco textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    .sectionFaleConoscoFormItem {
+        padding-top: 10px;
+    }
+    .sectionFaleConoscoFormItem button {
+        margin-bottom: 15px;
+    }
+    
+
+    
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .artigo-titu-texto.fo {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .artigo-titu .artigo-titu-barra.fo {
+        margin-left: 5px;
+    }
+
+    .linksFooter {
+        padding-left: 20px;
+    }
+
+    .newsletter {
+        padding-left: 20px;
+    }
+
+    
+
+    .draco_redesFooter ul {
+        text-align: center;
+        margin-right: 20px;
+        margin-left: -20px; 
+        margin-bottom: 5px;
+        justify-content: flex-start; 
+    }
+    
+    .draco_redesFooter img {
+        height: 18px;
+        padding-right: 20px; 
+
+    }
+    
+    
+
+    /* Responsividade  Mobile Fim*/
+     
+    
+}
+
+
+
